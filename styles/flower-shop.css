@@ -9,12 +9,23 @@ body{
     margin-top: 50px;
     margin-bottom: 20px;
     text-align: center;
-    
 }
 .section-desc{
     color: rgba(39, 39, 39, 0.6);
     text-align: center;
     font-size: 18px;
+}
+.content-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.content{
+    text-align: center;
+    max-width: 600px;
+}
+.color-text{
+    color: #E55473;
 }
 
 /* Header Related Style */
@@ -43,13 +54,14 @@ body{
     font-size: 18px;
     margin-bottom: 40px;
     color: rgba(39, 39, 39, 0.6);
+    max-width: 90%;
 }
 .btn-primary{
     background-color: #E55473;
     color: white;
     padding: 20px 40px;
     border: 0;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 20px;
 }
 
@@ -61,55 +73,66 @@ main{
 /* Feature Flowers Related Styles */
 .feature-flowers{
     padding: 100px 200px;
+    justify-content: center;
 }
-.feature-flowers-content{
-    max-width: 850px;
-    padding: 10px 400px;
+.feature-flowers-container{
+    display: flex;
+    gap: 24px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.feature-flowers-img{
+    background: #f4f2f2;
+    border-top-right-radius: 250px;
+    border-top-left-radius: 250px;
+    padding: 100px 75px 0px 75px;
+}
+.feature-flowers-name-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px;
+    margin-bottom: 100px;
+}
+.feature-flowers-name{
+    font-size: 24px;
+    color: rgba(39, 39, 39, 0.8);
+    font-weight: 600;
 }
 
 /* Services Related Styles */
 .services-container{
     background: #f4f2f2;
-    width: 1200px;
-    padding: 80px 100px;
     display: flex;
     justify-content: space-around;
     border-radius: 10px;
+    padding: 0 150px;
 }
 .services{
     text-align: center;
     max-width: 33%;
+    padding: 80px 0;
 }
 .service-desc{
     font-size: 24px;
     color: rgba(39, 39, 39, 0.8);
+    font-weight: 600;
 }
 
 /* Sale Related Section */
 .hot-deal-sale{
     display: flex;
     background: #f4f2f2;
-    padding: 80px 300px;
+    padding: 80px 400px;
     justify-content: space-between;
-}
-.hot-deal-sale-content{
-    max-width: 600px;
-    text-align: center;
-}
-
-.off{
-    color: #E55473;
+    align-items: center;
 }
 
 /* Social Related Section */
 .social{
-    padding: 0px 170px;
-}
-.social-content{
-    max-width: 850px;
-    padding: 10px 400px;
+    margin: 50px 200px;
 }
 .social-images{
+    margin-top: 30px;
     padding: 0 10px;
 }
 
@@ -118,13 +141,16 @@ main{
     padding: 100px 200px;
 }
 .latest-deals-container{
-    background-image: url(/images/Rectangle\ 9.png);
-    padding: 105px 200px;
+    background-image: url(../images/Rectangle-9.png);
+    background-repeat: no-repeat;
+    padding: 70px 200px 150px 200px;
     border-radius: 10px;
 }
 .contact{
-    background: #f4f2f2;
     display: flex;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 30px 0px;
 }
 .contact input[type="email"]{
     background-color: #fff;
@@ -140,10 +166,20 @@ footer{
     background: black;
     display: flex;
     gap: 100px;
-    margin-top: 100px;
     padding: 130px 200px;
+    justify-content: center;
 }
-
-.flower{
-    color: #E55473;
+.shop{
+    color: #FFFFFF;
+}
+.footer-section-desc{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}
+.footer-section-desc-2{
+    color: rgba(255, 255, 255, 0.4);;
+    text-align: center;
+    font-size: 16px;
 }
